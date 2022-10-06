@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			div p:nth-of-type(1) {
+				position: absolute;
+				top: 0;
+				left: 0;
+				animation: fadeOut 1s ease-in-out forwards;
+			}
+			div p:nth-of-type(2) {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				transition: all 0.3s ease;
+				animation: fadeIn 1s ease-in-out 0.4s forwards;
+			}
+			div {
+				position: relative;
+				margin: 1rem;
+				height: 100px;
+			}
+			@keyframes fadeOut {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>GLS University</p>
+			<p>Gujarat Law Society</p>
+		</div>
+		<div>
+			<p>FCAIT</p>
+			<p>Faculty of Computer Applications and Information Technology</p>
+		</div>
+	</body>
+</html>
